@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6 feedback-form">
+    <%= simple_form_for @form do |f| %>
+        <%= f.input :name %>
+        <%= f.input :age %>
+        <%= f.input :related_form_id, label: 'Previous Feedback ID' %>
+        <%= f.input :attachment, as: :file, label: false %>
+
+        <%= f.button :submit, class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+  <div class="col-md-3"></div>
+</div>
