@@ -45,6 +45,7 @@ RSpec.describe FormsController, type: :controller do
   end
 
   describe "GET #new" do
+
     it 'assigns a new form to @form' do
       get :new
       expect(assigns(:form)).to be_a_new(Form)
